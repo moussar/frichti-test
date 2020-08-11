@@ -1,0 +1,66 @@
+{
+  "extends": [
+    "airbnb"
+  ],
+  "plugins": [
+    "react-hooks"
+  ],
+  "rules": {
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          ".storybook/**'",
+          "**/*.stories.js",
+          "**/*.test.js",
+          "**/*.spec.js",
+          "src/setupTests.js"
+        ]
+      }
+    ],
+    "indent": [
+      "warn",
+      2
+    ],
+    "no-plusplus": [
+      "error",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "react/forbid-prop-types": [
+      2,
+      {
+        "forbid": [
+          "any"
+        ]
+      }
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "react/jsx-props-no-spreading": [
+      1,
+      {
+        "exceptions": [
+          "Icon",
+          "IconName",
+          "img",
+          "Picture",
+          "Styled",
+          "TagName"
+        ]
+      }
+    ]
+  },
+  "env": {
+    "browser": true,
+    "jest": true
+  }
+}
